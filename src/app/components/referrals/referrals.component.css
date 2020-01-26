@@ -1,0 +1,136 @@
+nav{
+	    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    z-index: 1030;
+}
+.nav-link{
+	display: flex;
+	align-items: center;
+}
+.alignlink{
+	padding-top: 7px
+}
+.navbar-brand{
+	width:56%;
+	margin-left: 2rem;
+}
+.nav-item{
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.referrals{
+	width:100%;
+	
+
+}
+.ref_data{
+	width:70%;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	margin: 0px auto;
+}
+.ref_num{
+	float: left;
+}
+.ref_credits{
+	float:right;
+}
+.ref_row{
+	width:75%;
+	margin:0px auto;
+}
+.ref_cards_row{
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.ref_card{
+	
+	padding:2rem;
+}
+.card_content{
+	padding:2rem;
+	color:antiquewhite;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 1.8px 10px rgba(0, 0, 0, 0.086), 0 0px 0px rgba(0, 0, 0, 0.12);
+}
+.heading{
+	text-align: center;
+	font-size: 2.5vw;
+	font-weight:bold;
+	color: #bcb5b5;
+	padding-top: 3rem
+}
+.main_label {
+	font-weight: bold;
+	font-size: 120%
+}
+.alternative{
+	text-align: center;
+	margin-top:3rem;
+	font-weight: bold;
+	font-size: 2vw;
+}
+.ref_name{
+	font-size: 1.2rem;
+	font-weight: bold;
+	color:teal;
+
+}
+.ref_date{
+	color:turquoise;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+}
+.nav-link:hover{
+	cursor:pointer;
+}
+.improvised-brand:hover{
+	cursor:pointer;
+}
+@media only screen and (max-width:1340px)
+{
+	.navbar-brand{
+		width:50%;
+		margin-left:3rem;
+	}
+}
+@media only screen and (max-width:1206px)
+{
+	.navbar-brand{
+		width:40%;
+		margin-left: 5rem;
+	}
+}
+@media only screen and (max-width:1066px)
+{
+	.navbar-brand{
+		width:30%;
+		margin-left: 6rem;
+	}
+}
+@media only screen and (max-width:990px)
+{
+	.navbar-brand{
+		margin-left: 1rem;
+	}
+}
+@media only screen and (max-width:900px)
+{
+	.ref_cards_row{
+		grid-template-columns: 1fr 1fr; 
+	}
+}
+@media only screen and (max-width:700px)
+{
+	.ref_cards_row{
+		grid-template-columns: 1fr; 
+	}
+	.main_label{
+		font-size: 100%
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.ref_data{
+		width:90%;
+	}
+}

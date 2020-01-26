@@ -1,0 +1,11 @@
+mat-form-field{
+	width:100%;
+	margin-bottom: 1rem
+}
+.bn{
+	text-align: center;
+	background-color: greenyellow;
+}
+.login_btn{
+	text-align: center;
+}

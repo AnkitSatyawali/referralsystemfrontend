@@ -1,0 +1,35 @@
+<div class="heading">
+	Registration Form
+</div>
+<div class="registration_form">
+	<form class="fo" #signupForm="ngForm" (submit)="onSignup(signupForm)">
+  	  <div class="fields">
+  		<mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput name="username" ngModel type="text" minlength="3" required>
+                <mat-error>Please enter the username and username should contain at least three letter</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput name="email" placeholder="Enter your email" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput name="password" ngModel minlength="10" type="password" #input required>
+                <mat-error>Password must be of at least 8 characters</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+                <mat-label>Referral Code</mat-label>
+                <input matInput name="refcode" [(ngModel)]="code"  [disabled]="flag" minlength="6" type="text" #input required>
+                <mat-error>Enter valid referral code</mat-error>
+        </mat-form-field>
+       <div class="register_btn">
+       		<button mat-raised-button [disabled]="email.invalid || signupForm.invalid" class="bn" type="submit" style="color:white" >Register</button>
+   		</div>
+     </div>
+  	</form>
+</div>
+<div class="footer">
+  <div class="footer_content">MADE BY ANKIT SATYAWALI</div>
+</div>

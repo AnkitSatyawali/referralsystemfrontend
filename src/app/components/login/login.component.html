@@ -1,0 +1,19 @@
+<div>
+	  	<form class="fo" #loginForm="ngForm" (submit)="onLogin(loginForm)">
+  	  <div class="fields">
+        <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput name="email" ngModel type="email" required>
+                <mat-error>Please enter the valid email</mat-error>
+        </mat-form-field>
+        <mat-form-field >
+                <mat-label>Password</mat-label>
+                <input matInput name="password" ngModel minlength="10" type="password" #input required>
+                <mat-error>Please enter the password</mat-error>
+        </mat-form-field>
+        <div class="login_btn">
+       		<button mat-raised-button [disabled]="loginForm.invalid" class="bn" style="color:white" type="submit" (click)="onNoClick()">Submit</button>
+       	</div>
+     </div>
+  	</form>
+</div>

@@ -1,0 +1,69 @@
+.heading{
+	text-align: center;
+	font-size: 2.5vw;
+	font-weight:bold;
+	color: #bcb5b5;
+	padding-top: 2rem
+}
+.registration_form{
+	width:100%;
+}
+.fo{
+	width:50%;
+	margin:0px auto;
+	margin-top: 3rem;
+	padding:2rem;
+	/*border:1px solid #bcb5b5;*/
+	border-radius: 2px;
+	box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 1.8px 10px rgba(0, 0, 0, 0.086), 0 0px 0px rgba(0, 0, 0, 0.12)
+}
+mat-form-field{
+	width:100%;
+}
+.register_btn{
+	text-align: center;
+}
+.bn{
+	margin-top: 1.8rem;
+	background-color: cyan;
+}
+.dis
+{
+	background-color: cyan;
+	cursor:not-allowed;
+}
+button:disabled{
+	background-color: cyan;
+	cursor:not-allowed;
+}
+.footer{
+	background-color: #666262;
+	height: 20vh;
+	color:white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 3rem;
+}
+.footer_content{
+	padding-top: 8vh
+}
+@media only screen and (max-width:850px)
+{
+	.fo{
+		width:70%;
+	}
+	.heading{
+		font-size: 3.5vw
+	}
+}
+@media only screen and (max-width:430px)
+{
+	.fo{
+		padding:1rem;
+		width:85%;
+	}
+	.heading{
+		font-size: 4.5vw
+	}
+}

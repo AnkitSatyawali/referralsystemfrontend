@@ -1,0 +1,143 @@
+.home{
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 100vh;
+	background-image: url(../../../assets/image/back.jpg);
+	background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  /*background-size: 100% 100%*/
+}
+.main_heading{
+	text-align: center;
+	font-size:3vw;
+	padding-top: 55vh;
+	font-weight: bold;
+	color:#f096f7;
+}
+.main_buttons{
+	width:50%;
+	margin:0px auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+}
+.main_spacer{
+	width:20%;
+}
+.main_buttons>button{
+	width:30%;
+	border-radius: 3rem;
+	padding-left:2rem;
+	padding-right: 2rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	font-size: 1.2rem;
+	color:white;
+	font-weight:700;
+
+}
+button:focus{
+	outline:none;
+}
+.register{
+	background-color: cyan;
+	border:none;
+}
+.login{
+	background-color: greenyellow;
+	border:none;
+}
+.instruction{
+	width:100%;
+}
+.heading{
+	text-align: center;
+	font-size: 2.5vw;
+	font-weight:bold;
+	padding-top: 2rem;
+}
+.instruction_matter{
+	width:60%;
+	margin:0px auto;
+	text-align: justify;
+	font-size: 1.5vw;
+	padding-top: 1.5rem;
+	line-height: 160%;
+}
+.note{
+	width:60%;
+	margin:0px auto;
+	text-align: justify;
+	font-size: 1.5vw;
+	padding-top: 1.5rem;
+	font-weight:bold;
+}
+.footer{
+	background-color: #666262;
+	height: 20vh;
+	color:white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 3rem;
+}
+.footer_content{
+	padding-top: 8vh
+}
+@media only screen and (max-width:892px)
+{
+	.main_buttons {
+		width:60%;
+	}
+	.main_heading{
+		font-size: 4vw;
+	}
+	.main_buttons>button{
+		width:40%;
+		padding-left: 1rem;
+		padding-right:1rem;
+		font-size: 1rem;
+	}
+	.main_spacer{
+		width:10%;
+	}
+}
+@media only screen and (max-width:563px)
+{
+	.main_heading{
+		font-size: 4.5vw;
+	}
+	.main_buttons>button{
+		padding-top: 0.3rem;
+		padding-bottom:0.3rem;
+		font-size: 0.7rem;
+	}
+	.heading{
+		font-size: 3.5vw;
+	}
+	.instruction_matter{
+		font-size: 2vw
+	}
+	.note{
+		font-size: 2vw;
+	}
+}
+@media only screen and (max-width:450px)
+{
+	.main_heading{
+		font-size: 5vw;
+	}
+	.main_buttons>button{
+		padding:0;
+	}
+	.heading{
+		font-size: 5.5vw;
+	}
+	.instruction_matter{
+		font-size: 3vw
+	}
+	.note{
+		font-size: 3vw;
+	}
+}

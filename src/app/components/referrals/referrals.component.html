@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand" ><span class="improvised-brand" [routerLink]="['/referrals']"><img src="../../../favicon.ico"> REFSYSTEM</span></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link">
+          <mat-icon>assessment</mat-icon> <span class="alignlink">REFERRALS</span> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  matTooltip="Coming very soon">
+          <mat-icon>card_travel</mat-icon><span class="alignlink"> EXCHANGE STORE</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon><span class="alignlink"> LOGOUT
+          </span> </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<div class="referrals">
+  <div class="ref_data">
+    <div class="ref_num"><span class="main_label">No. Of Referrals :</span> {{refnumber}}</div>
+    <div class="ref_credits"><span class="main_label">Credits Earned :</span> {{credits}}</div>
+  </div>
+   <div class="ref_data">
+    <div class="ref_num"><span class="main_label">Referrals Code :</span> {{refcode}}</div>
+  </div>
+  <div class="ref_data">
+    <div class="ref_num"><span class="main_label">Referrals Link : </span> <a [href]="url">{{url}}</a> </div>
+  </div>
+  <div class="heading">
+    Persons Referred You
+  </div>
+  <div *ngIf="usersArray.length==0" class="alternative">
+    No one have used your referral code.
+  </div>
+  <div class="ref_row">
+    <div class="ref_cards_row">
+      <div class="ref_card" *ngFor="let user of usersArray">
+        <div class="card_content">
+          <div class="ref_name">{{user.name}}</div>
+          <div class="ref_date">{{user.referedOn}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

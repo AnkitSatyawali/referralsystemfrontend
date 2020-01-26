@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: RobotoLight;
+  src: url(assets/RobotoMono-Light.ttf) format("opentype");
+  font-family: RobotoRegular;
+  src: url(assets/RobotoMono-Regular.ttf) format("opentype");
+  font-family: RobotoMedium;
+  src: url(assets/RobotoMono-Medium.ttf) format("opentype");
+  font-family: RobotoBold;
+  src: url(assets/RobotoMono-Bold.ttf) format("opentype");
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
