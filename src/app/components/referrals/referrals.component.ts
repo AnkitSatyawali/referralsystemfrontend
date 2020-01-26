@@ -27,7 +27,7 @@ refcode;
       this.credits = result.credits;
       this.refcode = result.refcode;
       this.usersArray = result.referrals
-      this.url = 'http://localhost:4200/register/'+this.refcode;
+      this.url = 'https://refsystemtask.herokuapp.com/register/'+this.refcode;
   	},err => {
     		console.log(err);
           
